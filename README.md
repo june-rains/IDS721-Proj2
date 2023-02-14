@@ -1,6 +1,5 @@
-# rust-new-project-template
-A good starting point for a new Rust project
+# IDS721-Proj2
 
-## References
+***This is my study for Rust + Tokio Concurrency Library***
 
-* [rust-cli-template](https://github.com/kbknapp/rust-cli-template)
+The repository used Rust and Tokio to build a backend multiple chat application
