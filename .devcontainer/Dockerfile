@@ -4,5 +4,7 @@ FROM mcr.microsoft.com/devcontainers/rust:0-1-bullseye
 # RUSTFLAGS="-C link-arg=-fuse-ld=lld" or with Cargo's configuration file (i.e see .cargo/config.toml).
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
    && apt-get -y install clang lld \
-   && apt-get autoremove -y && apt-get clean -y\
-   && apt-get install telnet
+   && apt-get autoremove -y && apt-get clean -y \
+   && apt-get install telnet \
+   && apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   
