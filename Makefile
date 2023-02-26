@@ -1,3 +1,9 @@
+install:
+	# Install if needed
+	@echo "Updating rust toolchain"
+	rustup update stable
+	rustup default stable
+
 rust-version:
 	@echo "Rust command-line utility versions:"
 	rustc --version 			#rust compiler
@@ -7,18 +13,21 @@ rust-version:
 	clippy-driver --version		#rust linter
 
 format:
+	@echo "Formatting all projects with cargo"
 	cargo fmt --quiet
 
 lint:
+	@echo "Linting project with cargo"
 	cargo clippy --quiet
 
 test:
+	@echo "Testing project with cargo"
 	cargo test --quiet
 
 run:
 	cargo run
 
-release:
-	cargo build --release
-
 all: format lint test run
+
+
+
