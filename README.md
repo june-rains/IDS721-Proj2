@@ -19,19 +19,22 @@ This repo used **Rust** and **Tokio** to build a backend chat application, conta
   * Create a deployment: `kubectl create deployment chatapp --image=registry.hub.docker.com/junerains/chatapp`
   * View deployment: `kubectl get deployments`
   * Create service and expose it (In my project, I choose **NodePort** type): `kubectl expose deployment chatapp --type=NodePort --port=8080`
+  * View services: `kubectl get service chatapp`
   * Put forward port: `kubectl port-forward service/chatapp 8080:8080`
   * Run command: `telnet localhost 8080` in several other terminals
   * Clean up:
     ```bash
-    kubectl delete service hello-fastapi
-    kubectl delete deployment hello-fastapi
+    kubectl delete service chatapp
+    kubectl delete deployment chatapp
     minikube stop
     ````
  ## Results
  ### Local
+ ![res](./lcoal.png)
  
  ### MiniKube
- 
+  ![res](./minikube.png)
+
  ## Demo Video
  
  
