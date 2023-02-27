@@ -8,4 +8,3 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
    && apt-get autoremove -y && apt-get clean -y \
    && apt-get install curl \
    && apt-get install telnet
-
