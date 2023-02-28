@@ -37,7 +37,9 @@ This repo used **Rust** and **Tokio** to build a backend chat application, conta
 
  ## Demo Video
  
- 
+https://user-images.githubusercontent.com/71317967/221716820-3ffcffc6-6c3f-4696-a107-52ccea6bb73e.mp4
+
+
 
 
 
